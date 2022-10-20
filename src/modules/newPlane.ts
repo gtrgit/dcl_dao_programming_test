@@ -33,5 +33,6 @@ export function loadPlane(
     ent.addComponent(planeMaterial)
     ent.addComponent(planeTransform)
     engine.addEntity(ent)
+    
 
 }
