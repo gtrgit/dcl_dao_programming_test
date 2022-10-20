@@ -38,7 +38,8 @@ weatherAsyncTask()
                     for (const entId in engine.entities){
                     
                         if (entId === elevator.entities[i].uuid){
-                            elevatorUpDown(engine.entities[entId],.3,6.2)
+                            let entIdStr:string = elevator.entities[i].uuid
+                            elevatorUpDown(engine.entities[entIdStr] as Entity,.3,6.2)
                         
                         }
                     }
@@ -66,7 +67,8 @@ weatherAsyncTask()
                 for (const entId in engine.entities){
                 
                     if (entId === elevator.entities[i].uuid){
-                        elevatorUpDown(engine.entities[entId],6.2,.3)
+                        let entId:string = elevator.entities[i].uuid
+                        elevatorUpDown(engine.entities[entId] as Entity,6.2,.3)
                     }
                 }
             }
